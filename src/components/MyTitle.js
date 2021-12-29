@@ -1,5 +1,16 @@
 import React from "react";
+// react的组件有4种
+// 1、函数式组件
+/* 
+function HelloMessage(props) {
+    return <h1>Hello World!</h1>;
+}
+const element = <HelloMessage />;
 
+*/
+// 2、类组件，比如本例中的
+// 更多可以参考以下这篇文章
+// https://zh-hans.reactjs.org/docs/components-and-props.html
 class MyTitle extends React.Component {
   render() {
     return (

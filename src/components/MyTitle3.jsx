@@ -1,8 +1,8 @@
 import React from "react";
 
 export default class MyTitle3 extends React.Component {
-  constructor(...arg) {
-    super(...arg);
+  constructor(props) {
+    super(props);
     this.state = {
       //这里的word会变成当前时间
       word: "world",
@@ -11,6 +11,10 @@ export default class MyTitle3 extends React.Component {
       //写个开关，用来恢复默认值
       isFlag: false
     };
+  }
+
+  componentDidMount() {
+    console.log(this.state);
   }
 
   fun() {
